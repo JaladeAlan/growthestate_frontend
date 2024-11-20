@@ -1,0 +1,86 @@
+name: growthestate
+description: Real Estate Investment for the masses.
+
+# Prevent publishing to pub.dev
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+sdk: ">=2.12.0 <3.5.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  shared_preferences: ^2.1.0 
+  
+  # HTTP requests
+  http: ^1.0.0
+
+  # JWT token handling
+  jwt_decoder: ^2.0.0
+
+  # State management
+  provider: ^6.0.0
+  dependencies:
+  flutter_riverpod: ^2.0.0
+
+
+  logger: ^2.5.0
+  path_provider: ^2.1.5
+
+  # Image picker for uploads
+  image_picker: ^0.8.9
+  image_picker_for_web: ^2.1.12
+
+  # Secure storage for sensitive data (e.g., JWT tokens)
+  flutter_secure_storage: ^8.1.0
+  flutter_secure_storage_windows: ^2.1.1
+
+  # Declarative routing (optional)
+  go_router: ^7.1.1
+
+  # Icons for iOS styling
+  cupertino_icons: ^1.0.2
+
+  # State management alternative (optional)
+  flutter_bloc: ^8.0.0
+  hydrated_bloc: ^9.0.0 # Optional for persistence
+
+  # Form validation (optional)
+  flutter_form_builder: ^9.3.0
+
+  # JSON serialization
+  json_annotation: ^4.8.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+  # Code generation for JSON serialization
+  build_runner: ^2.4.6
+  json_serializable: ^6.7.0
+
+flutter:
+  uses-material-design: true
+
+  # Add assets (e.g., images, JSON files)
+  assets:
+    - assets/images/
+    - assets/data/
+
+  # Add custom fonts
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
+    - family: Lato
+      fonts:
+        - asset: assets/fonts/Lato-Regular.ttf
+        - asset: assets/fonts/Lato-Bold.ttf
+          weight: 700
