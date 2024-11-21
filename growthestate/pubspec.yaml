@@ -7,14 +7,14 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-sdk: ">=2.12.0 <3.5.0"
+  sdk: ">=3.5.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
   shared_preferences: ^2.1.0 
-  
+
   # HTTP requests
   http: ^1.0.0
 
@@ -23,9 +23,7 @@ dependencies:
 
   # State management
   provider: ^6.0.0
-  dependencies:
   flutter_riverpod: ^2.0.0
-
 
   logger: ^2.5.0
   path_provider: ^2.1.5

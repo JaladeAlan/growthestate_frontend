@@ -1,31 +1,35 @@
-class Land {
+class LandModel {
   final int id;
-  final String title;
-  final double price;
+  final String name;
   final String location;
+  final double size;
+  final double pricePerUnit;
 
-  Land({
+  LandModel({
     required this.id,
-    required this.title,
-    required this.price,
+    required this.name,
     required this.location,
+    required this.size,
+    required this.pricePerUnit,
   });
 
-  factory Land.fromJson(Map<String, dynamic> json) {
-    return Land(
+  factory LandModel.fromJson(Map<String, dynamic> json) {
+    return LandModel(
       id: json['id'],
-      title: json['title'],
-      price: json['price'].toDouble(),
+      name: json['name'],
       location: json['location'],
+      size: json['size'],
+      pricePerUnit: json['price_per_unit'],
     );
   }
 
   Map<String, dynamic> toJson() {
     return {
       'id': id,
-      'title': title,
-      'price': price,
+      'name': name,  
       'location': location,
+      'size': size,  
+      'price_per_unit': pricePerUnit, 
     };
   }
 }
